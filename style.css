@@ -1,0 +1,544 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    font-family:inherit;
+
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    background: #5A361E;;
+    align-items: center;
+}
+
+
+.cup {
+    width: 100px;
+    margin-top: -0.5rem;
+    
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-content: center;
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    
+
+}
+nav li a {
+  color: white;
+
+}
+
+nav li a:hover {
+    color: brown;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkblue; /* Vhodná barva pro odkazy */
+}
+
+a[target="_blank"]::after {
+    content: "🔗";
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: blanchedalmond;
+}
+
+.highlight {
+    background-color: brown;
+}
+
+.italic {
+    font-style: italic;
+}
+.reserve{
+
+}
+.reserve{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    padding: 70px ;
+}
+.left-div{
+    display: flex;
+    flex: 1;
+}
+.right-div{
+    padding-top: 5rem;
+    flex: 1;
+    color: #5A361E;
+}
+.ad{
+    color:#5A361E;
+    font-family: Playfair Display;
+    font-size: 68px;
+    font-style: normal;
+    width: 80%;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 17px;
+    margin-left: -10px;
+}
+.ads{
+    color: #5A361E;
+    width: 540px;
+    text-align: justify;
+    
+    font-family: Dosis;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    width: 80%;
+    line-height: 142.9%; /* 25.722px */
+}
+.menu-table {
+ 
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #5a3e36;
+}
+.talbe-component{
+  margin-top: 14rem;
+}
+.menu-table th, .menu-table td {
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    text-align: left;
+    color: #5a3e36;
+}
+#white-mr{
+  color: white;
+}
+.footer{
+  background: #5a3e36;
+  width: 100vw;
+  height: 300px;
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+.hos{
+  font-size: 32px;
+  margin-bottom: 5rem;
+  margin-top: -3rem;
+}
+.menu-table thead {
+    background-color: #5a3e36;
+    color: white;
+}
+
+.menu-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.menu-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.menu-table tbody tr:hover {
+    background-color: #ddd;
+}
+/* li:nth-child(even) {
+    color: brown;
+} */
+.heross {
+    position: relative;
+    height: 550px;
+    width: 100%;
+    background-image: url("./desktop-wallpaper-piping-hot-coffee-print-a-more.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 12%;
+    position: relative;
+  }
+  
+  .hero__content {
+    
+    width: max-content;
+    position: relative;
+    z-index: 1; /* Ensures content appears above the image */
+  }
+  
+  .hero__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Ensures the image covers the width without stretching */
+    z-index: 0; /* Ensures the image is behind the content */
+  }
+  
+.hero__content h1 {
+    
+    padding-top: 4rem;
+  color: #FFF;
+  font-family: Playfair Display;
+  font-size: 68px;
+  font-style: normal;
+  width: 80%;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 17px;
+}
+.hero__content p {
+  
+  width: 540px;
+  text-align: justify;
+  color: #FFF;
+  font-family: Dosis;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  width: 50%;
+  line-height: 142.9%; /* 25.722px */
+}
+.hero__content__buttons {
+
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.hero__content__buttons button {
+  width: 180px;
+  height: 45px;
+  color: #FFF;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  background: #5A361E;
+  border-radius: 4px;
+  border: none;
+}
+.hero__content__buttons button:nth-of-type(2) {
+  border: 1px solid #FFF;
+  background: transparent;
+}
+.hero__content__buttons button:hover {
+  cursor: pointer;
+}
+
+
+@media (max-width: 1300px) {
+  .hero__content {
+
+  }
+  .hero__content h1 {
+    font-size: 60px;
+  }
+  .hero__content p {
+    width: 500px;
+    font-size: 20px;
+  }
+  .hero__content__buttons button {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1000px) {
+  .hero {
+    display: flex;
+  }
+  .hero__content {
+    margin-left: 10%;
+  }
+  .hero__content h1 {
+    font-size: 50px;
+  }
+  .hero__content p {
+    width: 500px;
+    font-size: 19px;
+  }
+  .hero__content__buttons button {
+    width: 140px;
+    height: 40px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 100px;
+    height: 430px;
+  }
+  .hero__content {
+    margin-left: 10%;
+  }
+  .hero__content h1 {
+    font-size: 45px;
+  }
+  .hero__content p {
+    width: 500px;
+    font-size: 16px;
+  }
+  .hero__content__buttons button {
+    width: 110px;
+    height: 35px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 650px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero__content {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+  }
+  .hero__content h1 {
+    font-size: 45px;
+  }
+  .hero__content p {
+    width: 500px;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+  }
+  .hero__content__buttons button {
+    width: 110px;
+    height: 35px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 550px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero__content {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+  }
+  .hero__content h1 {
+    font-size: 40px;
+  }
+  .hero__content p {
+    width: 500px;
+    font-size: 15px;
+    width: 80%;
+    display: flex;
+    text-align: center;
+  }
+  .hero__content__buttons button {
+    width: 100px;
+    height: 33px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+  }
+  .hero__content {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+  }
+  .hero__content h1 {
+    font-size: 33px;
+  }
+  .hero__content p {
+    width: 500px;
+    font-size: 13px;
+    width: 80%;
+    display: flex;
+    text-align: center;
+  }
+  .hero__content__buttons button {
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=hero.module.css.map */
+
+
+/*Gelerie styles*/
+
+.galery{
+  width: 100vw;
+  
+}
+.container{
+
+}
+.phto-part{
+  padding: 4rem 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.al{
+  font-family: Playfair Display;
+  font-size: 68px;
+  color: black;
+}
+.row{
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+.row img {
+  width: 255px;
+  height: auto;
+  
+}
+.bigOne  img{
+  margin-top: 10px;
+  width: 785px;
+  height: 350px;
+}
+.contac-page{
+  
+}
+.form-part{
+  padding: 5rem 11%;
+  
+}
+.form input{
+
+}
+
+.form-acd{
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+/* Formulář */
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 15px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #5a3e36;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #5a3e36;
+  background-color: #fff;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #5a3e36;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #d9b59b;
+}
+
+.saf{
+  margin-top: 1rem;
+}
+.text-divos{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  flex-direction: column;
+  font-weight: bold;
+  font-family: Playfair Display;
+}
+
+.text-divos span{
+  color: #5a3e36;
+}
+.text-divos p{
+  color: #5a3e36;
+  text-align: center;
+  justify-content: center;
+  width: 30%;
+}
+/* Mobile-friendly layout */
+@media (max-width: 768px) {
+  .contact-form {
+      width: 90%;
+  }
+}
