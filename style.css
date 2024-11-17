@@ -1,16 +1,17 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: white;
 }
-
+/* body */
 body {
     font-family:inherit;
 
     width: 100vw;
 }
-
+/* styles of header container */
 header {
     display: flex;
     justify-content: space-between;
@@ -19,7 +20,7 @@ header {
     align-items: center;
 }
 
-
+/* this is logo of the page*/
 .cup {
     width: 100px;
     margin-top: -0.5rem;
@@ -32,7 +33,7 @@ nav {
     justify-content: center;
     align-content: center;
 }
-
+/* These are styles of li in navbar*/
 nav li {
     list-style-type: none;
     margin-right: 20px;
@@ -50,24 +51,27 @@ nav li a:hover {
     color: brown;
     cursor: pointer;
 }
-
-nav a {
+ul{
+  display: flex;
+  flex-direction: row;
+}
+nav ul a {
     text-decoration: none;
-    color: darkblue; /* Vhodná barva pro odkazy */
+
 }
 
 a[target="_blank"]::after {
     content: "🔗";
 }
-
+/* This is general styles for headings*/
 h1 {
     font-size: 2em;
 }
-
+/* This is general styles for headings*/
 h2 {
     font-size: 1.5em;
 }
-
+/* This is general styles for par*/
 p {
     font-size: 16px;
     line-height: 1.6;
@@ -83,22 +87,32 @@ p {
 }
 .reserve{
 
-}
+}/* This is container for reservation part of the page*/
 .reserve{
     height: 400px;
     display: flex;
     flex-direction: row;
     padding: 70px ;
 }
+@media (max-width: 768px) {
+  .reserve{
+    flex-direction: column;
+    margin-bottom: 40rem;
+  }
+}
+
+/* This is left part of the reserve page */
 .left-div{
     display: flex;
     flex: 1;
 }
+/* This is right part of the reserve page */
 .right-div{
     padding-top: 5rem;
     flex: 1;
     color: #5A361E;
 }
+/* This is styles for main heading in the above the fold */
 .ad{
     color:#5A361E;
     font-family: Playfair Display;
@@ -110,6 +124,7 @@ p {
     padding-bottom: 17px;
     margin-left: -10px;
 }
+/* This is styles for main heading in the above the fold */
 .ads{
     color: #5A361E;
     width: 540px;
@@ -122,6 +137,7 @@ p {
     width: 80%;
     line-height: 142.9%; /* 25.722px */
 }
+/* This is table styles for the table*/
 .menu-table {
  
     width: 60%;
@@ -134,15 +150,22 @@ p {
 .talbe-component{
   margin-top: 14rem;
 }
+/* Styiling the row of the table */
 .menu-table th, .menu-table td {
     border: 1px solid #ddd;
     padding: 12px 20px;
     text-align: left;
     color: #5a3e36;
 }
+/* id for 1 row in the table*/
 #white-mr{
   color: white;
 }
+/* id for 1 row in the table*/
+#white-mrs{
+  color: white;
+}
+/* container for the footer part of the page*/
 .footer{
   background: #5a3e36;
   width: 100vw;
@@ -152,6 +175,7 @@ p {
   align-items: center;
   justify-content: center;
 }
+/* text in the footer*/
 .text-footer{
   display: flex;
   flex-direction: column;
@@ -162,10 +186,12 @@ p {
   align-items: center;
 }
 .hos{
+
   font-size: 32px;
   margin-bottom: 5rem;
   margin-top: -3rem;
 }
+/* id for column in the table*/
 .menu-table thead {
     background-color: #5a3e36;
     color: white;
@@ -185,20 +211,21 @@ p {
 /* li:nth-child(even) {
     color: brown;
 } */
+ /* container for the heros sectino*/
 .heross {
     position: relative;
     height: 550px;
     width: 100%;
-    background-image: url("./desktop-wallpaper-piping-hot-coffee-print-a-more.jpg");
+    background-image: url("./desktop-wallpaper-piping-hot-coffee-print-a-more.webp");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 12%;
     position: relative;
   }
-  
+  /* id for contert*/
   .hero__content {
     
-    width: max-content;
+    width:100%;
     position: relative;
     z-index: 1; /* Ensures content appears above the image */
   }
@@ -212,7 +239,7 @@ p {
     object-fit: cover; /* Ensures the image covers the width without stretching */
     z-index: 0; /* Ensures the image is behind the content */
   }
-  
+  /* h1 in the hero section*/
 .hero__content h1 {
     
     padding-top: 4rem;
@@ -225,6 +252,7 @@ p {
   line-height: normal;
   padding-bottom: 17px;
 }
+/* styles for p row in the table*/
 .hero__content p {
   
   width: 540px;
@@ -237,6 +265,7 @@ p {
   width: 50%;
   line-height: 142.9%; /* 25.722px */
 }
+/* buttons for hero*/
 .hero__content__buttons {
 
   margin-top: 20px;
@@ -264,7 +293,7 @@ p {
 .hero__content__buttons button:hover {
   cursor: pointer;
 }
-
+/* media query for hero resp*/
 
 @media (max-width: 1300px) {
   .hero__content {
@@ -283,12 +312,30 @@ p {
     font-size: 16px;
   }
 }
+.row{
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.row img {
+  width: 255px;
+  height: auto;
+  
+}
+/* big image in the columns*/
+.bigOne  img{
+  margin-top: 10px;
+  width: 785px;
+  height: 350px;
+}
 @media (max-width: 1000px) {
   .hero {
     display: flex;
   }
   .hero__content {
-    margin-left: 10%;
+
   }
   .hero__content h1 {
     font-size: 50px;
@@ -302,14 +349,41 @@ p {
     height: 40px;
     font-size: 15px;
   }
+  .galery{
+    width: 100vw;
+    
+  }
+  
+  .phto-part{
+    padding: 4rem 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .row img {
+    width: 200px;
+    height: auto;
+    
+  }
+  .imgossss{
+  width: 450px;
+  height: 450px;
 }
+.bigOne  img{
+  margin-top: 10px;
+  width: 620px;
+  height: 350px;
+}
+}
+
 @media (max-width: 768px) {
   .hero {
     padding-top: 100px;
     height: 430px;
   }
   .hero__content {
-    margin-left: 10%;
+   
   }
   .hero__content h1 {
     font-size: 45px;
@@ -323,32 +397,84 @@ p {
     height: 35px;
     font-size: 13px;
   }
+  .talbe-component{
+    margin-top: -15rem;
+    padding-top:0;
+  }
 }
 @media (max-width: 650px) {
+  
   .hero {
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+  .heross{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  }.frmrmr{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .hero__content {
     display: flex;
     align-items: center;
     margin: 0;
     flex-direction: column;
+    justify-items: center;
+    text-align: center;
   }
   .hero__content h1 {
-    font-size: 45px;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    margin: 0 auto;
   }
   .hero__content p {
     width: 500px;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     text-align: center;
+    margin: 0 auto;
   }
   .hero__content__buttons button {
     width: 110px;
     height: 35px;
     font-size: 13px;
+  }
+  .row img {
+    width: 150px;
+    height: auto;
+    
+  }
+  .imgossss{
+  width: 450px;
+  height: 450px;
+  }
+  .bigOne  img{
+  margin-top: 10px;
+  width: 470px;
+  height: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .row img {
+    width: 110px;
+    height: auto;
+    
+  }
+  .imgossss{
+  width: 430px;
+  height: 450px;
+  }
+  .bigOne  img{
+  margin-top: 10px;
+  width: 350px;
+  height: 200px;
   }
 }
 @media (max-width: 550px) {
@@ -411,14 +537,11 @@ p {
 
 
 /*Gelerie styles*/
-
 .galery{
   width: 100vw;
   
 }
-.container{
 
-}
 .phto-part{
   padding: 4rem 11%;
   display: flex;
@@ -426,27 +549,45 @@ p {
   justify-content: center;
   align-items: center;
 }
+
 .al{
   font-family: Playfair Display;
   font-size: 68px;
   color: black;
 }
-.row{
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
-  flex-direction: row;
+.imgossss{
+  width: 450px;
+  height: 450px;
 }
-.row img {
-  width: 255px;
-  height: auto;
-  
+@media (max-width: 950px){
+  .reserve{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 15rem;
+  }
+  .right-div{
+    text-align: center;
+    justify-content: center;
+  }
+  .flflf{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto  ;
+  }
+  .ads{
+    margin: 0 auto;
+  }
+  .ad{
+    margin: 0 auto;
+  }
 }
-.bigOne  img{
-  margin-top: 10px;
-  width: 785px;
-  height: 350px;
-}
+
+/* the images in a row*/
+
 .contac-page{
   
 }
@@ -461,11 +602,12 @@ p {
 .form-acd{
 
 }
+/* from of the page*/
 form{
   display: flex;
   flex-direction: column;
 }
-/* Formulář */
+/* from */
 .contact-form {
   width: 50%;
   margin: 0 auto;
@@ -481,7 +623,7 @@ form{
   font-weight: bold;
   color: #5a3e36;
 }
-
+/* styles when inputung*/
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="text"],
@@ -492,14 +634,14 @@ form{
   border-radius: 4px;
   background-color: #f9f9f9;
 }
-
+/* styles when inputung*/
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: #5a3e36;
   background-color: #fff;
   outline: none;
 }
-
+/* contact page buttons*/
 .contact-form button {
   background-color: #5a3e36;
   color: white;
@@ -516,6 +658,7 @@ form{
 .saf{
   margin-top: 1rem;
 }
+/* styles for the text div in contact*/
 .text-divos{
   margin-top: 5rem;
   display: flex;
@@ -530,15 +673,67 @@ form{
 .text-divos span{
   color: #5a3e36;
 }
+/* styles for p in text div */
 .text-divos p{
   color: #5a3e36;
   text-align: center;
   justify-content: center;
   width: 30%;
 }
+textarea{
+  resize: none;
+}
 /* Mobile-friendly layout */
 @media (max-width: 768px) {
   .contact-form {
       width: 90%;
   }
+}
+.featured-items {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+  margin-top: 5rem;
+}
+
+.featured-items h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 10%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #666;
 }
