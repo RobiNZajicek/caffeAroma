@@ -296,9 +296,7 @@ p {
 /* media query for hero resp*/
 
 @media (max-width: 1300px) {
-  .hero__content {
 
-  }
   .hero__content h1 {
     font-size: 60px;
   }
