@@ -4,12 +4,14 @@
     margin: 0;
     padding: 0;
     color: white;
+    
 }
+
 /* body */
 body {
     font-family:inherit;
 
-    width: 100vw;
+    width: 100%;
 }
 /* styles of header container */
 header {
@@ -66,6 +68,7 @@ a[target="_blank"]::after {
 /* This is general styles for headings*/
 h1 {
     font-size: 2em;
+    
 }
 /* This is general styles for headings*/
 h2 {
@@ -296,7 +299,10 @@ p {
 /* media query for hero resp*/
 
 @media (max-width: 1300px) {
-
+  .imgossss{
+    width: 450px;
+    height: 450px;
+  }
   .hero__content h1 {
     font-size: 60px;
   }
@@ -450,8 +456,8 @@ p {
     
   }
   .imgossss{
-  width: 450px;
-  height: 450px;
+  width: 425px;
+  height: 425px;
   }
   .bigOne  img{
   margin-top: 10px;
@@ -460,14 +466,32 @@ p {
   }
 }
 @media (max-width: 480px) {
+  .ad{
+    font-size: 40px;
+
+  }
+  .ads{
+    width: 100%;
+    padding: 0;
+  }
+  .cup{
+    width: 70px;
+  }
+  nav li {
+    
+    font-size: 10px;
+    font-weight: bold;
+    
+
+}
   .row img {
     width: 110px;
     height: auto;
     
   }
   .imgossss{
-  width: 430px;
-  height: 450px;
+  width: 300px;
+  height: 300px;
   }
   .bigOne  img{
   margin-top: 10px;
@@ -503,60 +527,7 @@ p {
     font-size: 12px;
   }
 }
-@media (max-width: 400px) {
-  .hero {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 350px;
-  }
-  .hero__content {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    flex-direction: column;
-  }
-  .hero__content h1 {
-    font-size: 33px;
-  }
-  .hero__content p {
-    width: 500px;
-    font-size: 13px;
-    width: 80%;
-    display: flex;
-    text-align: center;
-  }
-  .hero__content__buttons button {
-    width: 90px;
-    height: 30px;
-    font-size: 12px;
-  }
-}/*# sourceMappingURL=hero.module.css.map */
 
-
-/*Gelerie styles*/
-.galery{
-  width: 100vw;
-  
-}
-
-.phto-part{
-  padding: 4rem 11%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.al{
-  font-family: Playfair Display;
-  font-size: 68px;
-  color: black;
-}
-.imgossss{
-  width: 450px;
-  height: 450px;
-}
 @media (max-width: 950px){
   .reserve{
     display: flex;
@@ -686,6 +657,9 @@ textarea{
   .contact-form {
       width: 90%;
   }
+  .text-divos span{
+    font-size: 30px;
+  }
 }
 .featured-items {
   text-align: center;
@@ -734,4 +708,70 @@ textarea{
 .card p {
   font-size: 0.9rem;
   color: #666;
+}
+@media (max-width: 400px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+  }
+  .hero__content {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .hero__content h1 {
+    font-size: 33px;
+    width: 100%;
+  }
+  .hero__content p {
+    padding: 0;
+    font-size: 13px;
+    width: 80%;
+    display: flex;
+    text-align: center;
+  }
+  .imgossss{
+    width: 250px;
+    height: 250px;
+  }
+  .hero__content__buttons button {
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .row img {
+    width: 90px;
+    height: auto;
+    
+  } 
+  .bigOne  img{
+  margin-top: 10px;
+  width: 290px;
+  height: 200px;
+  }
+}/*# sourceMappingURL=hero.module.css.map */
+
+
+/*Gelerie styles*/
+.galery{
+  width: 100vw;
+  
+}
+
+.phto-part{
+  padding: 4rem 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.al{
+  font-family: Playfair Display;
+  font-size: 68px;
+  color: black;
 }
