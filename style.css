@@ -10,7 +10,7 @@
 /* body */
 body {
     font-family:inherit;
-
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     width: 100%;
 }
 /* styles of header container */
